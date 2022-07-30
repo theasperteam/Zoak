@@ -16,6 +16,7 @@ html,body{
     overflow-x:hidden;
     font-family: 'Poppins' serif;
     color:#FFFFFF;
+    background-color: #000;
 }
 
 ::-webkit-scrollbar{
@@ -27,4 +28,11 @@ html,body{
     width:3px;
     color: #11998e;
     background-color: #11998e;
+}
+    .landing{
+    background: url("../images/General/Bg-app.png");
+    background-position: center;
+    background-blend-mode: normal;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
