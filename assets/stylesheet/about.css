@@ -1,0 +1,15 @@
+.landing{
+    height:100vh;
+    width:100vw;
+    background: url("../images/AboutHeroBg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#AboutMockMission img:first-of-type{
+    z-index: 1;
+}
+
+#AboutMockMission img:nth-child(2){
+    z-index: -10;
+}
