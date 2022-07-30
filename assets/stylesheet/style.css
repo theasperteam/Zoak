@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+}
+.landing{
+    background: url("../images/General/Bg-app.png");
+    background-position: center;
+    background-blend-mode: normal;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
