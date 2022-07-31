@@ -1,9 +1,23 @@
+html{
+    max-width:100vw;
+}
+
 .landing{
     height:100vh;
     width:100vw;
     background: url("../images/AboutHeroBg.png");
     background-size: cover;
     background-position: center;
+}
+
+.landing>div{
+    padding:6%;
+}
+
+@media (max-width:576px){
+    .landing>div{
+        padding:0;
+    }
 }
 
 #AboutMockMission img:first-of-type{

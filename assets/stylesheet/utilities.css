@@ -40,3 +40,41 @@
   line-height: 30px;
   letter-spacing: 0em;
 }
+
+/* Media Queries */
+
+/* Devices Ranging From 992px to 768 px */
+@media (max-width:992px){
+  .head1{
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .subTitle1{
+    font-size: 18px ;
+    line-height: 27px;
+  }
+}
+
+@media (max-width:768px){
+  .head1{
+    font-size: 42px;
+    line-height: 55px;
+  }
+  .subTitle1{
+    font-size: 16px ;
+    line-height: 25px;
+  }
+}
+
+@media (max-width:576px){
+  .head1{
+    font-size: 36x;
+    line-height: 55px;
+  }
+  .subTitle1{
+    font-size: 14px ;
+    line-height: 25px;
+  }
+}
+@media (min-width:576px){}
+
