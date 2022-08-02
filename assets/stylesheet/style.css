@@ -1,12 +1,119 @@
-:root {
-    --light-green: #35e77f;
-    --dark-green: #11998e;
-  }
-
-    .landing{
+.landing{
+    height: auto;
+    min-height: 100%;
     background: url("../images/General/Bg-app.png");
     background-position: center;
-    background-blend-mode: normal;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.landing-app{
+    position: relative;
+    width: 375px;
+}
+.landing-text{
+    flex : 1;
+    padding: 2rem;
+}
+.landing-image{
+    flex : 1;
+    display : flex;
+    justify-content: center;
+}
+.text-blob-1{
+    position: absolute;
+    top: 200px;
+    right: 500px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: var(--light-green);
+    border-radius: 4px;
+    padding: 12px 28px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+.text-blob-2{
+    position: absolute;
+    bottom: 190px;
+    right:210px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: var(--dark-green);
+    border-radius: 4px;
+    padding: 8px 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+.img-blob{
+    position: absolute;
+    bottom: 40px;
+    right: 500px;
+}
+.img-blob img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* features section  */
+
+.feature-text-1{
+    flex : 1;
+}
+.feature-image{
+    flex : 2;
+}
+.feature-text-2{
+    flex : 1;
+}
+
+/* app showcase section */
+
+.app-showcase{
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    overflow-y: hidden;
+    background: rgb(22,22,22);
+    background: linear-gradient(0deg, rgba(22,22,22,1) 0%, rgba(34,34,34,1) 100%);
+}
+
+.showcase-img {
+    position: absolute;
+    bottom: -20vh;
+    right: 20vw;
+    z-index: 0;
+}
+
+/* cta section */
+
+.cta{
+    height: auto;
+    min-height: 100%;
+    background: url("../images/General/Bg-web.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Media Queries */
+
+/* Devices Ranging From 992px to 768 px */
+@media (max-width:992px){
+    
+}
+  
+@media (max-width:768px){
+    .landing-text{
+        flex : 1;
+    }
+}
+  
+@media (max-width:576px){
+    .landing-text{
+        flex : 1;
+    }
+}
+@media (min-width:576px){}
+  
+  

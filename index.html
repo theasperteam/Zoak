@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zoak</title>
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/stylesheet/utilities.css" />
     <link rel="stylesheet" href="./assets/stylesheet/style.css" />
     <!-- Bootstrap CSS -->
     <link
@@ -19,9 +20,9 @@
     <div class="landing">
       <div class="container mx-auto">
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand fw-bold" href="#">Zoak</a>
             <button
               class="navbar-toggler"
               type="button"
@@ -34,56 +35,23 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item me-2">
+                  <a class="nav-link active" href="#">Our App</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                <li class="nav-item me-2">
+                  <a class="nav-link" href="./webShow.html">Web Panel</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
+                <li class="nav-item me-2">
+                  <a class="nav-link" href="./about.html">About</a>
                 </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link disabled"
-                    href="#"
-                    tabindex="-1"
-                    aria-disabled="true"
-                    >Disabled</a
-                  >
+                <li class="nav-item me-2">
+                  <a class="nav-link" href="./team.html">Team</a>
                 </li>
               </ul>
               <form class="d-flex">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  Search
+                <button class="button2 me-2" type="submit">
+                  Contact us
                 </button>
               </form>
             </div>
@@ -92,71 +60,115 @@
 
         <!-- hero section -->
         <div
-          class="d-flex flex-col align-items-center justify-content-between flex-wrap"
+          class="d-flex flex-row align-items-center justify-content-between flex-wrap"
         >
           <!-- text section -->
-          <div class="d-flex flex-column w-50">
-            <h1 class="w-50">Appointment on your schedule</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-              repudiandae unde accusantium corporis error. Delectus ullam sequi
-              reprehenderit.
+          <div class="landing-text d-flex flex-column justify-content-center mx-auto">
+            <h1 class="head1">Appointment on your schedule</h1>
+            <p class="para1 w-75">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut exercitationem atque consequuntur!
             </p>
-            <div class="button-group">
-              <button class="btn btn-primary">Download App</button>
-              <button class="btn btn-secondary">O</button>
-              <button class="btn btn-secondary">O</button>
+            <div class="button-group my-1">
+              <button class="button1">Download App</button>
+              <!-- <button class="btn btn-secondary">O</button> -->
+              <!-- <button class="btn btn-secondary">O</button> -->
             </div>
           </div>
+
           <!-- image section -->
           <div
-            class="image-section d-flex flex-row justify-content-center mx-auto w-50"
+            class="landing-image mx-auto"
           >
             <img
               src="./assets/images/AppMockups/App1.png"
               alt="landing phone mockup"
-              width="375"
+              class="landing-app"
             />
+            <!-- <div class="text-blob-1">
+              Lorem, ipsum dolor.
+            </div>
+            <div class="text-blob-2">
+              Lorem, ipsum.
+            </div>
+            <div class="img-blob">
+              <img src="./assets/images/General/Bg.jpg" alt="avatar">
+            </div> -->
           </div>
         </div>
       </div>
     </div>
 
     <!-- features section -->
-    <div class="container mx-auto my-2">
+    <div class="container mx-auto my-3 py-3">
         <div class="d-flex flex-column align-items-center mx-auto">
             <div class="d-flex flex-column text-center my-2">
-                <h1>Features</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nisi quis? Esse culpa voluptatibus natus odit, officiis totam.</p>
+                <h1 class="head1">Features</h1>
+                <p class="para1 w-75 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nisi quis? Esse culpa voluptatibus natus odit, officiis totam.</p>
             </div>
             <div class="d-flex flex-row">
-                <div class="d-flex flex-column text-center w-25 justify-content-around">
-                    <div class="feature-item">
-                        <h1>Features</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nisi quis? Esse culpa voluptatibus natus odit, officiis totam.</p>
+                <div class="feature-text-1 d-flex flex-column text-center justify-content-around">
+                    <div class="feature-item text-end">
+                        <h1 class="head2">Features</h1>
+                        <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nisi quis? Esse culpa voluptatibus natus odit, officiis totam.</p>
                     </div>
-                    <div class="feature-item">
-                        <h1>Features</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nisi quis? Esse culpa voluptatibus natus odit, officiis totam.</p>
-                    </div>
-                </div>
-                <div class="d-flex flex-column text-center w-50">
-                    <div class="feature-img">
-                        <img src="./assets/images/AppMockups/App2.png" alt="features image" width="400">
+                    <div class="feature-item text-end">
+                        <h1 class="head2">Features</h1>
+                        <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nisi quis? Esse culpa voluptatibus natus odit, officiis totam.</p>
                     </div>
                 </div>
-                <div class="d-flex flex-column text-center w-25  justify-content-around">
-                    <div class="feature-item">
-                        <h1>Features</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nisi quis? Esse culpa voluptatibus natus odit, officiis totam.</p>
+                <div class="feature-image d-flex flex-column justify-content-center">
+                    <div class="feature-img mx-auto">
+                        <img src="./assets/images/AppMockups/App3.png" alt="features image" width="400">
                     </div>
-                    <div class="feature-item">
-                        <h1>Features</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nisi quis? Esse culpa voluptatibus natus odit, officiis totam.</p>
+                </div>
+                <div class="feature-text-2 d-flex flex-column text-center justify-content-around">
+                    <div class="feature-item text-start">
+                        <h1 class="head2">Features</h1>
+                        <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nisi quis? Esse culpa voluptatibus natus odit, officiis totam.</p>
+                    </div>
+                    <div class="feature-item text-start">
+                        <h1 class="head2">Features</h1>
+                        <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nisi quis? Esse culpa voluptatibus natus odit, officiis totam.</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- app showcase section -->
+    <div class="app-showcase my-3 py-3">
+      <div class="container mx-auto d-flex flex-column justify-content-center align-items-center">
+        <div class="showcase-text text-center py-2 my-2">
+          <h1 class="head1">
+            Experience the App
+          </h1>
+          <p class="para1 w-75 mx-auto">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, cumque. Architecto, consequatur?
+          </p>
+        </div>
+        <div class="showcase my-3">
+          <img class="showcase-img" src="./assets/images/AppMockups/MultiScreen.png" alt="showcase-img" width="900">
+        </div>
+      </div>
+    </div>
+
+    <!-- scroll showcase section -->
+
+    <!-- web panel cta -->
+    <div class="cta my-3 py-3">
+      <div class="container mx-auto d-flex flex-column">
+        <div class="content py-3 my-3 text-center">
+          <h1 class="head2 mx-auto">
+            Want Your Services Availed At One Click?
+          </h1>
+          <p class="para1 w-50 mx-auto">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil molestiae explicabo, ut ex assumenda asperiores officia veniam dolor.
+          </p>
+          <button class="button1">
+            Explore
+          </button>
+        </div>
+      </div>
     </div>
 
     <script src="./assets/scripts/script.js"></script>
