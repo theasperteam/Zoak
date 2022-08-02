@@ -105,13 +105,11 @@ body{
   position: relative;
   text-align: center;
   touch-action: manipulation;
-  user-select: none;
-  -webkit-user-select: none;
   vertical-align: top;
   white-space: nowrap;
   z-index: 9;
   border: 0;
-  transition: all .3s ease;
+  transition: all .1s ease;
 }
 .button2{
   background-color: initial;
@@ -133,7 +131,7 @@ body{
   white-space: nowrap;
   z-index: 9;
   border: 0;
-  transition: all .3s ease;
+  transition: all .1s ease;
 }
 .button1:hover, .button2:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
