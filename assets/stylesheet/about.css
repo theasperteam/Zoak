@@ -1,29 +1,141 @@
-html{
-    max-width:100vw;
+html {
+  max-width: 100vw;
 }
 
-.landing{
-    height:100vh;
-    width:100vw;
-    background: url("../images/AboutHeroBg.png");
-    background-size: cover;
+.landing {
+  height: 100vh;
+  width: 100vw;
+  background: url("../images/AboutHeroBg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.landing > div {
+  padding: 6%;
+}
+
+@media (max-width: 576px) {
+  .landing > div {
+    padding: 0;
+  }
+}
+
+#Mission {
+  align-items: center;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#AboutMissionMockImg {
+  width: 80%;
+}
+
+#AboutMissionMockText {
+  position: absolute;
+  height: 7%;
+  width: 30%;
+  background-color: var(--light-green);
+  display: block;
+  right: 3%;
+  top: 20%;
+}
+#Vision {
+  align-items: center;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#AboutVisionMockImg {
+  width: 80%;
+}
+
+#AboutVisionMockText {
+  position: absolute;
+  height: 7%;
+  width: 30%;
+  background-color: var(--dark-green);
+  display: block;
+  left: 2%;
+  top: 25%;
+}
+
+@media (max-width: 992px) {
+  #AboutMissionMockImg {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #AboutMissionMockText {
+    right: 3%;
+    top: 23%;
+  }
+}
+
+@media (max-width: 992px) {
+  #Mission,
+  #Vision {
+    height: 75vh !important;
+  }
+  #AboutVisionMockImg {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #Vision > div > div {
+    width: 50% !important;
+  }
+  #AboutVisionMockText {
+    right: 3%;
+    top: 23%;
+  }
+}
+
+@media (max-width: 815px) {
+  #Mission {
+    padding-top: 35%;
+  }
+  #Mission div {
+    flex-direction: column;
+    width: 100%;
+  }
+  #Mission > div > div {
+    width: 100% !important;
+  }
+  #AboutMissionMockImg {
+    width: 40%;
+  }
+  #AboutMissionMockText {
+    width: 20% !important;
+    top: 25%;
+    right: 15%;
+  }
+  #Vision {
+    height: fit-content !important;
+    padding-top: 30%;
+  }
+  #Vision div {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  #Vision > div > div {
+    width: 100% !important;
+  }
+  #AboutVisionMockImg {
+    width: 50%;
+  }
+  #AboutVisionMockText {
+    width: 20% !important;
+    top: 30%;
+    left: 25%;
+  }
+}
+
+
+#AboutCTA{
+    width:100%;
+    background: url("../images/AboutCTABg.png");
     background-position: center;
-}
-
-.landing>div{
-    padding:6%;
-}
-
-@media (max-width:576px){
-    .landing>div{
-        padding:0;
-    }
-}
-
-#AboutMockMission img:first-of-type{
-    z-index: 1;
-}
-
-#AboutMockMission img:nth-child(2){
-    z-index: -10;
+    background-size: cover;
 }

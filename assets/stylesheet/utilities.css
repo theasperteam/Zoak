@@ -15,11 +15,15 @@
   background-color: #1c1c1c;
 }
 
+i{
+  color: #1c1c1c !important;
+}
+
 .icon-bg{
   padding:5%;
   border-radius:50%;
   background: linear-gradient(135deg, #35E77F 14.3%, #11998E 85.52%);
-  color:white;
+  color:#1c1c1c;
 }
 
 .full-screen{

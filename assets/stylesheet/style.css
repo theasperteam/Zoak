@@ -16,7 +16,7 @@ html,body{
     overflow-x:hidden;
     font-family: 'Poppins' serif;
     color:#FFFFFF;
-    background-color: #000;
+    background-color: #1c1c1c;
 }
 
 ::-webkit-scrollbar{
@@ -35,4 +35,17 @@ html,body{
     background-blend-mode: normal;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* Footer */
+#footerLink{
+    width:100%;
+    justify-content: center;
+}
+#footerLink ul{
+    list-style: none;
+}
+#footerLink ul li{
+    float: left;
+    margin:20px 50px;
 }
