@@ -11,14 +11,12 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+        <!-- font awesome -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      />
+  
 
     <!-- Custom CSS -->
     <link
@@ -41,7 +39,44 @@
   <body>
     <!-- Hero Section -->
     <section>
-      <div class="landing d-flex flex-column justify-content-center px-5">
+      <div class="landing">
+        <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-2">
+          <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">Zoak</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item me-2">
+                  <a class="nav-link" href="index.html">Our App</a>
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link" href="./webShow.html">Web Panel</a>
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link active" href="./about.html">About</a>
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link" href="./team.html">Team</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <button class="button2 me-2" type="submit">Contact us</button>
+              </form>
+            </div>
+          </div>
+        </nav></div>
+<div class="d-flex flex-column justify-content-center px-5 full-screen">
         <div class="container text-center">
           <p class="head1">Who Are We?</p>
           <p class="subTitle1">
@@ -50,7 +85,7 @@
             porttitor rhoncus dolor purus non enim praesent elementum facilisis
             leo, vel fringilla est ullamcorper eget nulla facilisi
           </p>
-        </div>
+        </div></div>
       </div>
     </section>
     <!-- Hero Section -->
@@ -126,36 +161,50 @@
           </p>
         </div>
         <div class="ml-auto">
+          <a href="team.html">
           <i class="fa-solid fa-angle-right icon-bg p-4"></i>
+        </a>
         </div>
       </div>
+          <!-- Footer -->
+          <footer class="text-center py-5">
+            <div>
+              <a class="mx-auto fw-bold text-white fs-3" href="index.html">Zoak</a>
+            </div>
+            <div class="d-flex pt-3 justify-content-center flex-wrap" id="footerLink">
+              <ul class="text-center justify-content-center">
+                <li><a href="index.html">Our App</a></li>
+                <li><a href="webShow.html">Web Panel</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Team</a></li>
+              </ul>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center py-3" id="footerContact">
+              <div class="mx-4">
+                <a><div><i class="fa-solid me-2 my-2 fa-envelope text-white"></i>test@email.com</div></a>
+              </div>
+              <div class="mx-4">
+                <div><i class="fa-solid me-2 my-2 fa-phone text-white"></i>+91 93024524XXX</div>
+              </div>
+              <div class="mx-4">
+                <div><i class="fa-solid me-2 m-2 fa-location-dot text-white"></i>Ireland</div>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center">
+            <ul id="socialLinks">
+              <li><a href=""><i class="fa-brands fa-twitter fs-4 socialLinks"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-linkedin fs-4 socialLinks"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-instagram fs-4 socialLinks"></i></a></li>
+            </ul>       
+            </div>
+            <div>
+          @theasperteam
+            </div>
+          </footer>
+    <!-- Footer -->
+
     </div>
     <!-- CTA Section -->
-
-    <!-- Footer -->
-    <footer class="text-center">
-      <div>
-
-      </div>
-      <div class="d-flex" id="footerLink">
-        <ul>
-          <li>App</li>
-          <li>Web</li>
-          <li>Services</li>
-          <li>About</li>
-          <li>Team</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-      <div class="d-flex" id="socialLinks">
-
-      </div>
-      <div>
-        Zoak - @theasperteam
-      </div>
-    </footer>
-    <!-- Footer -->
-
     <!-- Font Awesome -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

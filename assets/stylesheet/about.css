@@ -10,7 +10,7 @@ html {
   background-position: center;
 }
 
-.landing > div {
+#landingDiv {
   padding: 6%;
 }
 
