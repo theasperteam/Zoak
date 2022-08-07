@@ -1,0 +1,34 @@
+.member img{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border : 1px solid var(--dark-green);
+    border-radius: .5rem;
+}
+
+
+/* Media Queries */
+
+/* Devices Ranging From 992px to 768 px */
+@media (max-width:992px){
+    
+}
+  
+@media (max-width:768px){
+.member-detail p{
+    width: 75% !important;
+}
+.member img{
+    width: 160px;
+    height: 200px;
+}
+}
+  
+@media (max-width:576px){
+    .landing-text{
+        flex : 1;
+    }
+}
+@media (min-width:576px){}
+  
+  

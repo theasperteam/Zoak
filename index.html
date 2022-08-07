@@ -23,6 +23,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     />
+
+    <!-- animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- landing section -->
@@ -72,6 +75,7 @@
           <!-- text section -->
           <div
             class="landing-text d-flex flex-column justify-content-center mx-auto"
+            data-aos="fade-up"
           >
             <h1 class="head1">Appointment on your schedule</h1>
             <p class="para1 w-75">
@@ -85,11 +89,10 @@
           </div>
 
           <!-- image section -->
-          <div class="landing-image mx-auto">
+          <div class="landing-image mx-auto" data-aos="fade-up">
             <img
               src="./assets/images/AppMockups/App1.png"
               alt="landing phone mockup"
-              width="300"
             />
           </div>
         </div>
@@ -98,38 +101,79 @@
 
     <!-- features section -->
     <div
-      class="features container mx-auto py-5 d-flex flex-column align-items-center mx-auto flex-wrap"
+      class="features container mx-auto py-5 d-flex flex-column align-items-center justify-content-center mx-auto"
     >
-      <div class="d-flex flex-column text-center my-2">
+      <div class="d-flex flex-column text-center my-2" data-aos="fade-up">
         <h1 class="head1">Features</h1>
         <p class="para1 w-75 mx-auto">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nisi
           quis? Esse culpa voluptatibus natus odit, officiis totam.
         </p>
       </div>
-      <div class="d-flex flex-row">
+
+      <div class="feature-alt">
+        <div
+          class="content d-flex flex-row align-content-center justify-content-center flex-wrap"
+        >
+          <div class="f-item w-50 text-center" data-aos="fade-up">
+            <i class="fa-solid fa-thumbs-up icon-color my-3"></i>
+            <h1 class="head2">Features</h1>
+            <p class="para2 w-75 mx-auto">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi in
+              vel incidunt.
+            </p>
+          </div>
+          <div class="f-item w-50 text-center" data-aos="fade-up">
+            <i class="fa-solid fa-thumbs-up icon-color my-3"></i>
+            <h1 class="head2">Features</h1>
+            <p class="para2 w-75 mx-auto">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi in
+              vel incidunt.
+            </p>
+          </div>
+          <div class="f-item w-50 text-center" data-aos="fade-up">
+            <i class="fa-solid fa-thumbs-up icon-color my-3"></i>
+            <h1 class="head2">Features</h1>
+            <p class="para2 w-75 mx-auto">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi in
+              vel incidunt.
+            </p>
+          </div>
+          <div class="f-item w-50 text-center" data-aos="fade-up">
+            <i class="fa-solid fa-thumbs-up icon-color my-3"></i>
+            <h1 class="head2">Features</h1>
+            <p class="para2 w-75 mx-auto">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi in
+              vel incidunt.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-row" data-aos="fade-up">
         <div
           class="feature-text-1 d-flex flex-column text-center justify-content-around"
         >
           <div class="feature-item text-end p-3">
+            <i class="fa-solid fa-thumbs-up icon-color my-3"></i>
             <h1 class="head2">Features</h1>
             <p class="para2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nisi
-              quis? Esse culpa voluptatibus natus odit, officiis totam.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi in
+              vel incidunt.
             </p>
           </div>
           <div class="feature-item text-end p-3">
+            <i class="fa-solid fa-thumbs-up icon-color my-2"></i>
             <h1 class="head2">Features</h1>
             <p class="para2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nisi
-              quis? Esse culpa voluptatibus natus odit, officiis totam.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
+              consequatur et sit atque repellendus?
             </p>
           </div>
         </div>
         <div class="feature-image d-flex">
           <div class="blob">
             <img
-              src="./assets/images/AppMockups/App3.png"
+              src="./assets/images/AppMockups/App2.png"
               alt="features image"
             />
           </div>
@@ -138,17 +182,19 @@
           class="feature-text-2 d-flex flex-column text-center justify-content-around"
         >
           <div class="feature-item text-start p-3">
+            <i class="fa-solid fa-thumbs-up icon-color my-3"></i>
             <h1 class="head2">Features</h1>
             <p class="para2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nisi
-              quis? Esse culpa voluptatibus natus odit, officiis totam.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
+              similique minima non?
             </p>
           </div>
           <div class="feature-item text-start p-3">
+            <i class="fa-solid fa-thumbs-up icon-color my-3"></i>
             <h1 class="head2">Features</h1>
             <p class="para2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nisi
-              quis? Esse culpa voluptatibus natus odit, officiis totam.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+              laudantium.
             </p>
           </div>
         </div>
@@ -161,14 +207,14 @@
       <div
         class="container mx-auto d-flex flex-column justify-content-center align-items-center"
       >
-        <div class="showcase-text text-center py-2 my-2">
+        <div class="showcase-text text-center py-2 my-2" data-aos="fade-up">
           <h1 class="head1">Experience the App</h1>
           <p class="para1 w-75 mx-auto">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
             cumque. Architecto, consequatur?
           </p>
         </div>
-        <div class="showcase">
+        <div class="showcase" data-aos="fade-up">
           <img
             class="showcase-img"
             src="./assets/images/AppMockups/MultiScreen.png"
@@ -183,30 +229,28 @@
     <div
       class="container scroll-showcase py-5 d-flex flex-row align-items-center justify-content-center mx-auto"
     >
-      <section
-        class="splide container d-flex align-items-center justify-content-center m-auto"
-      >
-        <div class="splide__track">
+      <section class="splide container d-flex align-items-center m-auto">
+        <div class="splide__track" data-aos="fade-up">
           <ul class="splide__list">
             <li class="splide__slide">
               <div
                 class="showcase-1 d-flex flex-row align-items-start justify-content-center"
               >
                 <div class="text" id="text-1">
-                  <h1 class="head1">Appointment on your schedule</h1>
+                  <h1 class="head1">Choose from variety of services</h1>
                   <p class="para1 w-75">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Aut exercitationem atque consequuntur!
                   </p>
-                  <ul class="para2">
-                    <li><i class="fa-solid fa-user"></i>Lorem, ipsum dolor.</li>
+                  <ul class="para1">
+                    <li><i class="fa-solid fa-user"></i>Variety of Services</li>
                     <li>
-                      <i class="fa-solid fa-shield-halved"></i>Lorem ipsum dolor
-                      sit.
+                      <i class="fa-solid fa-shield-halved"></i>
+                      Trusted Vendors
                     </li>
                     <li>
-                      <i class="fa-solid fa-mobile-screen-button"></i>Lorem,
-                      ipsum dolor.
+                      <i class="fa-solid fa-mobile-screen-button"></i>
+                      100% Quality Services
                     </li>
                   </ul>
                 </div>
@@ -215,9 +259,9 @@
                   class="image d-flex flex-row align-content-center justify-content-center"
                 >
                   <img
-                    src="./assets/images/AppMockups/App4.png"
+                    src="./assets/images/AppMockups/App3.png"
                     alt="app mockup"
-                    width="300"
+                    width="280"
                   />
                 </div>
               </div>
@@ -228,43 +272,31 @@
                 class="showcase-2 d-flex flex-row align-items-start justify-content-center"
               >
                 <div class="text-1 text-start">
-                  <h1 class="head2">Appointment on your schedule</h1>
-                  <ul class="para2">
-                    <li><i class="fa-solid fa-user"></i>Lorem, ipsum dolor.</li>
-                    <li>
-                      <i class="fa-solid fa-shield-halved"></i>Lorem ipsum dolor
-                      sit.
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-mobile-screen-button"></i>Lorem,
-                      ipsum dolor.
-                    </li>
-                  </ul>
+                  <h1 class="head1">Schedule at your convenience</h1>
                 </div>
 
                 <div
                   class="image d-flex flex-row align-content-center justify-content-center"
                 >
                   <img
-                    src="./assets/images/AppMockups/App4.png"
+                    src="./assets/images/AppMockups/App5.png"
                     alt="app mockup"
-                    width="300"
+                    width="280"
                   />
                 </div>
 
                 <div class="text-2 text-end align-self-end">
-                  <h1 class="head2">Appointment on your schedule</h1>
-                  <ul class="para2">
-                    <li><i class="fa-solid fa-user"></i>Lorem, ipsum dolor.</li>
-                    <li>
-                      <i class="fa-solid fa-shield-halved"></i>Lorem ipsum dolor
-                      sit.
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-mobile-screen-button"></i>Lorem,
-                      ipsum dolor.
-                    </li>
-                  </ul>
+                  <img
+                    src="./assets/images/General/user.jpg"
+                    class="my-4"
+                    alt="user"
+                    width="280"
+                  />
+                  <h1 class="head2">Lorem, ipsum.</h1>
+                  <p class="para2 my-2">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Eos distinctio quos excepturi?
+                  </p>
                 </div>
               </div>
             </li>
@@ -274,29 +306,20 @@
                 class="showcase-3 d-flex flex-row-reverse align-items-end justify-content-center"
               >
                 <div class="text">
-                  <h1 class="head1">Appointment on your schedule</h1>
+                  <i class="fa-solid fa-thumbs-up icon-bg my-3"></i>
+                  <h1 class="head1">Make safer Payments</h1>
                   <p class="para1 w-75">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Aut exercitationem atque consequuntur!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Earum nihil ut assumenda commodi consequuntur minus eum, hic
+                    iste, nobis aperiam modi beatae, possimus dignissimos.
                   </p>
-                  <ul class="para2">
-                    <li><i class="fa-solid fa-user"></i>Lorem, ipsum dolor.</li>
-                    <li>
-                      <i class="fa-solid fa-shield-halved"></i>Lorem ipsum dolor
-                      sit.
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-mobile-screen-button"></i>Lorem,
-                      ipsum dolor.
-                    </li>
-                  </ul>
                 </div>
 
                 <div
                   class="image d-flex flex-row align-content-center justify-content-center"
                 >
                   <img
-                    src="./assets/images/AppMockups/App4.png"
+                    src="./assets/images/AppMockups/App6.png"
                     alt="app mockup"
                     width="300"
                   />
@@ -306,17 +329,81 @@
           </ul>
         </div>
       </section>
+
+      <section class="splide-alt">
+        <div
+          class="showcase-1 d-flex flex-row align-items-start justify-content-center my-5 flex-wrap"
+        >
+          <div class="text" data-aos="fade-up">
+            <h1 class="head1">Choose from variety of services</h1>
+            <ul class="para1">
+              <li><i class="fa-solid fa-user"></i>Variety of Services</li>
+              <li>
+                <i class="fa-solid fa-shield-halved"></i>
+                Trusted Vendors
+              </li>
+              <li>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                100% Quality Services
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="image d-flex flex-row align-content-center justify-content-center mx-auto"
+            data-aos="fade-up"
+          >
+            <img src="./assets/images/AppMockups/App3.png" alt="app mockup" />
+          </div>
+        </div>
+
+        <div
+          class="showcase-2 d-flex flex-row align-items-start justify-content-center my-5 flex-wrap"
+        >
+          <div
+            class="image d-flex flex-row align-content-center justify-content-center mx-auto"
+            data-aos="fade-up"
+          >
+            <img src="./assets/images/AppMockups/App5.png" alt="app mockup" />
+          </div>
+          <div class="text mx-auto" data-aos="fade-up">
+            <h1 class="head1">Schedule at your convenience</h1>
+            <p class="para1 w-75">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, sunt!
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="showcase-3 d-flex flex-row align-items-end justify-content-center my-5 flex-wrap"
+        >
+          <div class="text mx-auto" data-aos="fade-up">
+            <i class="fa-solid fa-thumbs-up icon-bg my-3"></i>
+            <h1 class="head1">Make safer Payments</h1>
+            <p class="para1 w-75">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
+              nihil ut assumenda commodi.
+            </p>
+          </div>
+          <div
+            class="image d-flex flex-row align-content-center justify-content-center mx-auto"
+            data-aos="fade-up"
+          >
+            <img src="./assets/images/AppMockups/App6.png" alt="app mockup" />
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- web panel cta -->
 
     <div class="cta py-5">
       <div class="container mx-auto d-flex flex-column">
-        <div class="content py-3 my-3 text-center">
+        <div class="content py-3 my-3 text-center" data-aos="fade-up">
           <h1 class="head2 mx-auto">
             Want Your Services Availed At One Click?
           </h1>
-          <p class="para1 mx-auto">
+          <p class="para1 mx-auto my-3">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
             molestiae explicabo, ut ex assumenda asperiores officia veniam
             dolor.
@@ -343,22 +430,12 @@
           wheelSleep: 2,
           releaseWheel: true,
           wheelMinThreshold: 3,
-          // breakpoints: {
-          //   400: {
-          //     perPage: 1,
-          //   },
-          //   640: {
-          //     perPage: 1,
-          //   },
-          //   960: {
-          //     perPage: 1,
-          //   },
-          //   1440: {
-          //     perPage: 1,
-          //   },
-          // },
         }).mount();
       });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
