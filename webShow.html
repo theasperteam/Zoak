@@ -23,10 +23,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     />
+
+    <!-- animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- landing section -->
-    <div class="landing">
+    <div class="weblanding">
       <div class="container mx-auto">
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
@@ -58,40 +61,43 @@
                   <a class="nav-link" href="./team.html">Team</a>
                 </li>
               </ul>
-              <form class="d-flex">
-                <button class="button2 me-2" type="submit">Contact us</button>
-              </form>
+              <div class="d-flex">
+                <a href="#footer"><button class="button2 me-2">Contact us</button></a>
+              </div>
             </div>
           </div>
         </nav>
 
         <!-- hero section -->
         <div
-          class="d-flex flex-row align-items-center justify-content-between mx-auto mt-lg-5 flex-wrap"
-          id="landingDiv"
+          class="d-flex flex-column align-items-center justify-content-between mx-auto mt-lg-5 flex-wrap"
+          id="webPanelDiv"
         >
           <!-- text section -->
           <div
-            class="landing-text d-flex flex-column justify-content-center mx-auto"
+            class="landing-text d-flex flex-column justify-content-center mx-auto text-center"
+            data-aos="fade-up"
           >
             <h1 class="head1">Appointment on your schedule</h1>
-            <p class="para1 w-75">
+            <p class="para1 webpara1 w-75 mx-auto">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
               exercitationem atque consequuntur!
             </p>
-            <div class="button-group my-1 d-flex align-items-center">
+            <div class="button-group my-1 d-flex align-items-center mx-auto">
               <button class="button1">Download App</button>
               <i class="text-white fs-2 mx-3 fa-brands fa-apple"></i>
             </div>
           </div>
 
           <!-- image section -->
-          <div class="landing-image mx-auto">
+          <div class="landing-image mx-auto position-relative"  data-aos="fade-up">
             <img
-              src="./assets/images/WebMockups/Appoinments.png"
+              src="./assets/images/WebMockups/Vendor profile.png"
               alt="landing phone mockup"
-              width="300"
+              class="w-50 mt-2"
             />
+            <div id="webEl"></div>
+            <div id="webEl2"></div>
           </div>
         </div>
       </div>
@@ -101,18 +107,19 @@
     <div
       class="features container mx-auto py-5 d-flex flex-column align-items-center mx-auto flex-wrap"
     >
-      <div class="d-flex flex-column text-center my-2">
+      <div class="d-flex flex-column text-center my-2" data-aos="fade-up">
         <h1 class="head1">Features</h1>
         <p class="para1 w-75 mx-auto">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nisi
           quis? Esse culpa voluptatibus natus odit, officiis totam.
         </p>
       </div>
-      <div class="d-flex flex-row">
+      <div class="d-flex flex-row" id="webFeaturesMain">
         <div
           class="feature-text d-flex flex-column  justify-content-around w-50"
+          id="webFeatures"
         >
-          <div class="feature-item p-1">
+          <div class="feature-item p-1" data-aos="fade-up">
             <h1 class="head2">Book Appointments</h1>
             <p class="para2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nisi
@@ -121,7 +128,7 @@
               quis? Esse culpa voluptatibus natus odit, officiis totam.
             </p>
           </div>
-          <div class="feature-item p-1">
+          <div class="feature-item p-1" data-aos="fade-up">
             <h1 class="head2">Book Appointments</h1>
             <p class="para2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nisi
@@ -131,11 +138,12 @@
             </p>
           </div>
         </div>
-        <div class="feature-image d-flex ">
-          <div class="blob">
+        <div class="feature-image d-flex w-50">
+          <div class="blob w-75">
             <img
-              src="./assets/images/WebMockups/Vendor profile.png"
+              src="./assets/images/WebMockups/Appoinments.png"
               alt="features image"
+              class="w-100"
             />
           </div>
         </div>
@@ -148,14 +156,14 @@
       <div
         class="container mx-auto d-flex flex-column justify-content-center align-items-center"
       >
-        <div class="showcase-text text-center py-2 my-2">
+        <div class="showcase-text text-center py-2 my-2" data-aos="fade-up">
           <h1 class="head1">Experience the Web</h1>
           <p class="para1 w-75 mx-auto">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
             cumque. Architecto, consequatur?
           </p>
         </div>
-        <div class="web-showcase">
+        <div class="web-showcase" data-aos="fade-up">
           <img
             class="showcase-img"
             src="./assets/images/WebMockups/Screen2.png"
@@ -172,7 +180,8 @@
     >
       <section
         class="splide container d-flex align-items-center justify-content-center m-auto"
-      >
+        data-aos="fade-up"
+       >
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide">
@@ -281,6 +290,7 @@
 
                 <div
                   class="image d-flex flex-row align-content-center justify-content-center"
+                  data-aos="fade-up"
                 >
                   <img
                     src="./assets/images/WebMockups/Staffs management.png"
@@ -293,13 +303,76 @@
           </ul>
         </div>
       </section>
+      <section class="splide-alt">
+        <div
+          class="showcase-1 d-flex flex-row align-items-center justify-content-center my-5 flex-wrap"
+        >
+          <div class="text" data-aos="fade-up">
+            <h1 class="head1">Choose from variety of services</h1>
+            <ul class="para1">
+              <li><i class="fa-solid fa-user"></i>Variety of Services</li>
+              <li>
+                <i class="fa-solid fa-shield-halved"></i>
+                Trusted Vendors
+              </li>
+              <li>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                100% Quality Services
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="image d-flex flex-row align-content-center justify-content-center mx-auto"
+            data-aos="fade-up"
+          >
+            <img src="./assets/images/WebMockups/Calendar.png" alt="web mockup" class="w-100" />
+          </div>
+        </div>
+
+        <div
+          class="showcase-2 d-flex flex-row align-items-center justify-content-center my-5 flex-wrap"
+        >
+          <div
+            class="image d-flex flex-row align-content-center justify-content-center mx-auto"
+            data-aos="fade-up"
+          >
+            <img src="./assets/images/WebMockups/Services management.png" alt="app mockup" class="w-100" />
+          </div>
+          <div class="text mx-auto" data-aos="fade-up">
+            <h1 class="head1">Schedule at your convenience</h1>
+            <p class="para1 w-75">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, sunt!
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="showcase-3 d-flex flex-row align-items-center justify-content-center my-5 flex-wrap"
+        >
+          <div class="text mx-auto" data-aos="fade-up">
+            <i class="fa-solid fa-thumbs-up icon-bg my-3"></i>
+            <h1 class="head1">Make safer Payments</h1>
+            <p class="para1 w-75">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
+              nihil ut assumenda commodi.
+            </p>
+          </div>
+          <div
+            class="image d-flex flex-row align-content-center justify-content-center mx-auto"
+            data-aos="fade-up"
+          >
+            <img src="./assets/images/WebMockups/Staffs management.png" alt="app mockup" class="w-100" >
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- web panel cta -->
 
-    <div class="cta py-5">
+    <div class="webcta py-5">
       <div class="container mx-auto d-flex flex-column">
-        <div class="content py-3 my-3 text-center">
+        <div class="content py-3 my-3 text-center " data-aos="fade-up">
           <h1 class="head2 mx-auto">
             Want To Get Services At One Click ?
           </h1>
@@ -312,7 +385,7 @@
         </div>
       </div>
           <!-- Footer -->
-    <footer class="text-center py-5">
+    <footer class="text-center py-5" id="footer">
       <div>
         <a class="mx-auto fw-bold text-white fs-3" href="index.html">Zoak</a>
       </div>
@@ -383,6 +456,10 @@
           // },
         }).mount();
       });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
