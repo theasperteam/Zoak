@@ -43,16 +43,33 @@ body{
   background-color: transparent !important;
 }
 
+<<<<<<< HEAD
 .navbar-dark .navbar-toggler {
   border: none !important;
     border-color: none !important;
+=======
+i{
+  color: #1c1c1c !important;
+}
+
+footer a{
+  color:white !important;
+  text-decoration: none;
+}
+
+footer{
+  color:white;
+}
+a:hover{
+  text-decoration: none;
+>>>>>>> 1829528ecad947652848a34c65296744e3fd98b7
 }
 
 .icon-bg{
   padding:5%;
   border-radius:50%;
   background: linear-gradient(135deg, #35E77F 14.3%, #11998E 85.52%);
-  color:white;
+  color:#1c1c1c;
 }
 .icon-color{
     background: linear-gradient(90deg, var(--light-green), var(--dark-green));

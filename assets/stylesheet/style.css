@@ -1,3 +1,35 @@
+:root {
+    --light-green: #35e77f;
+    --dark-green: #11998e;
+  }
+
+  
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100vh;
+    width:100vw;
+    overflow-x:hidden;
+    font-family: 'Poppins' serif;
+    color:#FFFFFF;
+    background-color: #1c1c1c;
+}
+
+::-webkit-scrollbar{
+    width:3px;
+    color: var(--dark-green)
+}
+
+::-webkit-scrollbar-thumb{
+    width:3px;
+    color: #11998e;
+    background-color: #11998e;
+}
+
 .landing{
     height: auto;
     min-height: 100vh;
@@ -7,6 +39,63 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* Footer */
+footer{
+    background-color: #1c1c1c99;
+}
+#footerLink{
+    width:100%;
+    justify-content: center;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    float: left;
+    margin:20px 50px;
+}
+
+.socialLinks{
+    padding:3%;
+    border-radius: 50%;
+    border: solid 2px transparent;
+    color:white !important;
+}
+
+.socialLinks:hover, footer a:hover{
+    color: var(--dark-green) !important;
+}
+
+@media(max-width: 680px){
+    #footerLink ul li{
+        float: none;
+        margin-left:0;
+        margin-right:0;
+    }
+}
+
+@media(max-width:424px){
+    #footerContact{
+        flex-direction: column;
+    }
+
+    #socialLinks {
+        width:100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #socialLinks li{
+        margin:5%;
+    }
+    #footerContact>*{
+        margin-top:5px;
+    }
+}
+/* Our App */
+
 .landing-image{
     flex : 1;
     display : flex;
@@ -62,6 +151,10 @@
     background: linear-gradient(133deg, rgba(53,231,127,1) 0%, rgba(17,153,142,1) 100%);
 }
 
+.icon-bg{
+    background: rgb(53,231,127);
+    background: linear-gradient(133deg, rgba(53,231,127,1) 0%, rgba(17,153,142,1) 100%);
+}
   
 .blob img{
     position: absolute;
@@ -167,6 +260,14 @@
 .showcase-img {
     width: 80%;
     z-index: 0;
+}
+
+.web-showcase{
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -5%;
 }
 
 /* cta section */
