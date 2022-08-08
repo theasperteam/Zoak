@@ -376,7 +376,7 @@ body {
 }
 
 @media(max-width:740px){
-  #webEl{
+  #webEl, #webEl2{
     display:none;
   }
 }
