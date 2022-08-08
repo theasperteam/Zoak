@@ -307,6 +307,7 @@ body {
   }
   .webFeaturesHead{
     display: block;
+    font-size: 20px;
   }
   .scroll-showcase .splide-alt img {
     width: 220px;
