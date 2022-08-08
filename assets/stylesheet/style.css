@@ -299,8 +299,14 @@ body {
   .landing-image img {
     width: 240px;
   }
-  .feature-item p {
+  .feature-item, .feature-item-web p {
     display: none;
+  }
+  .webFeaturesPara {
+    display: none;
+  }
+  .webFeaturesHead{
+    display: block;
   }
   .scroll-showcase .splide-alt img {
     width: 220px;
@@ -324,7 +330,10 @@ body {
   .landing-image img {
     width: 220px;
   }
-  .feature-item p{
+  .feature-item{
+    display: none;
+  }
+  .feature-item-web p{
     display: none;
   }
   .feature-alt {

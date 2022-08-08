@@ -95,7 +95,8 @@ html {
 
 @media (max-width: 815px) {
   #Mission {
-    padding-top: 35%;
+    height: fit-content !important;
+    padding-top: 5%;
   }
   #Mission div {
     flex-direction: column;
@@ -114,7 +115,7 @@ html {
   }
   #Vision {
     height: fit-content !important;
-    padding-top: 30%;
+
   }
   #Vision div {
     flex-direction: column-reverse;
@@ -133,6 +134,11 @@ html {
   }
 }
 
+@media(max-width:370px){
+  #Mission{
+    padding-top: 0;
+  }
+}
 
 #AboutCTA{
     width:100%;
