@@ -352,11 +352,11 @@ body {
     margin-top:10px;
   }
   .webPanel.blob {
-    height: 45vh;
-    width: 45vh;
+    height: 40vh;
+    width: 40vh;
   }
   .webPanel img {
-    width: 125% !important;
+    width: 120% !important;
   }
 }
 
@@ -423,7 +423,7 @@ body {
     width: 35vh;
   }
   .webPanel img {
-    width: 125% !important;
+    width: 120% !important;
   }
   #webFeatures {
     flex-direction: column !important;
