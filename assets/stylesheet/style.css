@@ -31,6 +31,7 @@ body {
 .landing {
   height: auto;
   min-height: 100vh;
+  width: 100vw;
   background: url("../images/General/Bg-app.png");
   background-position: center;
   background-attachment: fixed;
@@ -225,6 +226,7 @@ body {
 
 .app-showcase {
   height: auto;
+  min-height: 35vh;
   z-index: 1;
   overflow-y: hidden;
   background: rgb(22, 22, 22);
