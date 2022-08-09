@@ -93,6 +93,12 @@ body {
 .feature-alt {
   display: none;
 }
+#webFeatures {
+  flex: 1;
+}
+.webPanelImg {
+  flex: 1;
+}
 .blob {
   position: relative;
   display: flex;
@@ -107,6 +113,24 @@ body {
     rgba(53, 231, 127, 1) 0%,
     rgba(17, 153, 142, 1) 100%
   );
+}
+.webPanel.blob {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  width: 60vh;
+  border-radius: 50%;
+  background: rgb(53, 231, 127);
+  background: linear-gradient(
+    133deg,
+    rgba(53, 231, 127, 1) 0%,
+    rgba(17, 153, 142, 1) 100%
+  );
+}
+.webPanel img {
+  width: 110% !important;
 }
 
 .icon-bg {
@@ -299,12 +323,6 @@ body {
   .landing-image img {
     width: 240px;
   }
-  .feature-item, .feature-item-web p {
-    display: none;
-  }
-  .webFeaturesPara {
-    display: none;
-  }
   .webFeaturesHead{
     display: block;
     font-size: 20px;
@@ -333,7 +351,15 @@ body {
   #AppLandingCTA>*{
     margin-top:10px;
   }
+  .webPanel.blob {
+    height: 45vh;
+    width: 45vh;
+  }
+  .webPanel img {
+    width: 125% !important;
+  }
 }
+
 
 @media (max-width: 576px) {
   .landing-text {
@@ -345,9 +371,6 @@ body {
   .feature-item{
     display: none;
   }
-  .feature-item-web p{
-    display: none;
-  }
   .feature-alt {
     display: block;
   }
@@ -355,7 +378,7 @@ body {
 
 @media (max-width: 770px) {
   #webFeatures {
-    flex-direction: column !important;
+    flex-direction: row !important;
     justify-content: center;
     width: 100%;
     text-align: center;
@@ -393,6 +416,18 @@ body {
   width: 20%;
   display: block;
   background-color: #35e77f;
+}
+@media(max-width:400px){
+  .webPanel.blob {
+    height: 35vh;
+    width: 35vh;
+  }
+  .webPanel img {
+    width: 125% !important;
+  }
+  #webFeatures {
+    flex-direction: column !important;
+  }
 }
 
 @media (max-width: 740px) {

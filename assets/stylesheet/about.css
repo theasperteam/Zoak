@@ -14,12 +14,14 @@ html {
 #landingDiv {
   padding: 6%;
 }
-
-@media (max-width: 576px) {
-  .landing > div {
-    padding: 0;
-  }
+#AboutCTA{
+  width:100%;
+  background: url("../images/AboutCTABg.png");
+  background-position: center;
+  background-size: cover;
 }
+
+
 
 #Mission {
   align-items: center;
@@ -61,6 +63,7 @@ html {
   left: 2%;
   top: 25%;
 }
+
 
 @media (max-width: 992px) {
   #AboutMissionMockImg {
@@ -106,7 +109,10 @@ html {
     width: 100% !important;
   }
   #AboutMissionMockImg {
-    width: 40%;
+    width: 60%;
+  }
+  #AboutVisionMockImg {
+    width: 60%;
   }
   #AboutMissionMockText {
     width: 20% !important;
@@ -124,13 +130,35 @@ html {
   #Vision > div > div {
     width: 100% !important;
   }
+  #AboutVisionMockText {
+    width: 20% !important;
+    top: 30%;
+    left: 15%;
+  }
+  .w-75 {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .landing > div {
+    padding: 0;
+  }
+  #AboutMissionMockImg {
+    width: 80%;
+  }
   #AboutVisionMockImg {
-    width: 50%;
+    width: 100%;
+  }
+  #AboutMissionMockText {
+    width: 20% !important;
+    top: 25%;
+    right: 5%;
   }
   #AboutVisionMockText {
     width: 20% !important;
     top: 30%;
-    left: 25%;
+    left: 0;
   }
 }
 
@@ -138,11 +166,4 @@ html {
   #Mission{
     padding-top: 0;
   }
-}
-
-#AboutCTA{
-    width:100%;
-    background: url("../images/AboutCTABg.png");
-    background-position: center;
-    background-size: cover;
 }
